@@ -1,0 +1,14 @@
+Yesterday:
+- Downloaded all 10 Mutual Fund datasets.
+- Loaded datasets using Pandas.
+- Checked dataset shapes and columns.
+- Performed missing value analysis.
+- Performed duplicate record analysis.
+- Created data quality summary.
+
+Today:
+- Start data cleaning for NAV history dataset.
+- Validate dataset structure.
+
+Blockers:
+- Awaiting clarification from team regarding Day-2 implementation.

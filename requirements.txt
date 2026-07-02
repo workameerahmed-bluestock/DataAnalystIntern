@@ -1,0 +1,7 @@
+tlib
+seaborn
+plotly
+sqlalchemy
+requests
+scipy
+jupyter
