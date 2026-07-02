@@ -1,6 +1,15 @@
 import pandas as pd
-import numpy as np
+from sqlalchemy import create_engine
 
-print("Data Ingestion Started")
-print("Pandas Version:", pd.__version__)
-print("NumPy Version:", np.__version__)
+engine = create_engine("sqlite:///data/mutual_fund.db")
+
+df = pd.read_csv("data/raw/07_scheme_performance.csv")
+
+df.to_sql(
+    "scheme_performance",
+    engine,
+    if_exists="replace",
+    index=False
+)
+
+print("Data loaded successfully!")
